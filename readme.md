@@ -1,36 +1,3 @@
 # Overcoming Catastrophic Forgetting with Hard Attention to the Task
-
-## Abstract
-
-Catastrophic forgetting occurs when a neural network loses the information learned with the first task, after training on a second task. This problem remains a hurdle for artificial intelligence systems with sequential learning capabilities. In this paper, we propose a task-based hard attention mechanism that preserves previous tasks' information without affecting the current task's learning. A hard attention mask is learned concurrently to every task through stochastic gradient descent, and previous masks are exploited to constrain such learning. We show that the proposed mechanism is effective for reducing catastrophic forgetting, cutting current rates by 45 to 80%. We also show that it is robust to different hyperparameter choices, and that it offers a number of monitoring capabilities. The approach features the possibility to control both the stability and compactness of the learned knowledge, which we believe makes it also attractive for online learning or network compression applications.
-
-## Authors
-
-Joan Serra, Didac Suris, Marius Miron, & Alexandros Karatzoglou.
-
-## Reference and Link to Paper
-
-
-
-Serrà, J., Surís, D., Miron, M. & Karatzoglou, A.. (2018). Overcoming Catastrophic Forgetting with Hard Attention to the Task. Proceedings of the 35th International Conference on Machine Learning, in PMLR 80:4548-4557
-
-Link: [http://proceedings.mlr.press/v80/serra18a.html](http://proceedings.mlr.press/v80/serra18a.html)
-
-## Installing
-
-1. Create a python 3 conda environment (check the requirements.txt file)
-
-2. The following folder structure is expected at runtime. From the git folder:
-    * src/ : Where all the scripts lie (already produced by the repo)
-    * dat/ : Place to put/download all data sets
-    * res/ : Place to save results
-    * tmp/ : Place to store temporary files
-
-3. The main script is src/run.py. To run multiple experiments we use src/run_multi.py or src/work.py; to run the compression experiment we use src/run_compression.sh.
-
-## Notes
-
-* If using this code, parts of it, or developments from it, please cite the above reference. 
-* We do not provide any support or assistance for the supplied code nor we offer any other compilation/variant of it. 
-* We assume no responsibility regarding the provided code.
-
+Component platforms are widely used in developing large web and mobile applications to improve development efficiency and test coverage. Searching for the appropriate component in the component platform and introducing it into the project for use makes development efficient and reduces redundant code. Machine learning methods are now widely used in large component platforms to enhance automatic retrieval or identification. However, current machine learning models are less accurate in identifying components or icons with differences due to the difficulty of collecting a large amount of label data in online environments that can help learning. To address this problem, this paper improves the feature mixing method in active learning and embeds it into a classical continuous learning model to solve the problem of accuracy degradation when the model handles discrepant tasks and tasks with limited training data. The model proposed in this paper ensures that the accuracy and performance of the model do not degrade significantly when facing a series of tasks with less data in the dataset after training on the first few tasks. Compared with large neural network recognition tasks, the improved continuous learning model is more lightweight and can learn multiple tasks using a single model. Easy to use when combined with front-end engineering and can be added to projects through dependency libraries. Compared to various classical benchmark models in lifelong machine learning, the accuracy of the proposed model can be improved by about fifteen percent.
+# 核心模块目前在调参
