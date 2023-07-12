@@ -1,15 +1,3 @@
-import os
-import numpy as np
-import torch
-from torchvision import datasets
-from torch.utils.data import Dataset
-from torchvision import transforms
-from PIL import Image
-import openml
-from sklearn.preprocessing import LabelEncoder
-import pickle
-
-
 mini_domain_net_class_ids = {
     'bat': 20,
     'bathtub': 21,
@@ -304,20 +292,10 @@ def get_handler(name):
         return DataHandler1
     if name == 'EMNIST':
         return DataHandler1
-    elif name == 'SVHN':
+    elif name == 'Component-set':
         return DataHandler2
-    elif name == 'CIFAR10':
+    elif name == 'Icons-set':
         return DataHandler3
-    elif name == 'CIFAR100':
-        return DataHandler3
-    elif name == 'MiniImageNet':
-        return DataHandler3
-    elif name == 'domain_net-real':
-        return DataHandler4
-    elif name == 'mini_domain_net-real':
-        return DataHandler4
-    elif name == 'tiny_domain_net-real':
-        return DataHandler4
     elif is_openml(name):
         return DataHandler5
 
